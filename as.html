@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+
+<head>
+    <p id="func"></p>
+    <script>
+        function sayHello() {
+            document.write("Hello, Coding Ground!<br>");
+        }
+        sayHello();
+        let Fruit = [' apple', ' bannana', ' orange'];
+        Fruit = [...Fruit, ' Watermelon', ' strawberry', ' tomatos', ' peaches']
+        Fruit.push(' and other fruits');
+        Fruit.pop();
+        function appl() {
+            document.write(Fruit)
+            document.write("<br><br>Pi*r to the power of 2 is")
+        }
+        appl();
+
+        function myFunction() {
+            let r = 0;
+            while (r < 10) {
+                r += 1;
+                return Math.PI * r ** 2;
+            }
+
+        }
+        document.getElementById("func").innerHTML = myFunction();
+    </script>
+</head>
+
+<body style="background-color: lightblue">
+  <header>
+
+        <p style="color: darkgrey; text-align: center">I<big>Z</big>EROX</p>
+        <A HREF="a1.html">some other site</A>
+
+  </header>
+  <main>
+      <article>
+<p id="demo"></p>
+    <script>
+        let r = 0
+        while (r < 10) {
+            r += 1;
+            document.getElementById("demo").innerHTML = Math.PI * r ** 2;
+        }
+        for (var i = 0; i < 10; i++) {
+            setTimeout(function () {
+                console.log(i);
+            }, 1000);
+        }
+        for (var i = 0; i < 10; i++) {
+            (function () {
+                var ii = i;
+                setTimeout(function () {
+                    console.log(ii);
+                }, 1000);
+            })();
+        }
+        for (var i = 0; i < 10; i++) {
+            try { throw i }
+            catch (ii) {
+                setTimeout(function () {
+                    console.log(ii);
+                    console.log(ii * 2);
+                }, 1000);
+            }
+        }
+    </script>
+    <p>
+        article
+    </p>
+    </article>
+  </main>
+  <footer>
+      
+  </footer>
+    
+</body>
+
+</html>

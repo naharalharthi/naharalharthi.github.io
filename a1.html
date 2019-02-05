@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>nahars website</title>
+</head>
+<body>
+    <h1>Nahar's Website</h1>
+    <A HREF="as.html">some other site</A>
+<script>
+var f = false;
+console.log(f);
+var f = "12";
+console.log("12" +  "a")
+
+
+function lb() {
+document.write("\n");
+}
+let Family = [' Awwad', ' Hanan', ' Aseel'];
+
+Family = [...Family, ' Roshen', ' Nahar', ' Hamody', ' Yazan']
+Family.push(' and a dog');
+var myFirstName = "nahar"
+var myMiddleName = "Awwad"
+var myLastName = "alharthi"
+myLastName = "Al yazeedi " + myLastName
+var myFullName = myFirstName + "  " + myMiddleName + "  "+ myLastName;
+ 
+document.write(myFullName)
+
+
+<input type="button" onclick="document.getElementById('output1').innerHTML = 5 + 6;" value="add"/>
+<p id="output1"></p>
+
+
+function appl(){
+    document.write(Family)
+
+}
+
+appl();
+console.log(f);
+var myname = 9;
+  b = 4;
+  myname = b * 3;
+  console.log(myname);
+    document.write(myname);
+    console.log(myname);
+console.log( 2 - 5 );
+a = 1;
+b = 3;
+b+=2
+var l = 0.33
+console.log(l * 3)
+var dec = 3.124
+console.log(dec * b)
+console.log( a + b );
+var sum = [19, 12, 13].reduce(add, 0);
+
+function add(a, b) {
+    return a + b;
+}
+     console.log(sum);
+     var sam = [1, 2, 3].reduce((c, d) => c + d, 0);
+console.log(sam);
+</script>
+
+    
+
+    
+<p id="math"></p>
+    <b><p id="demo"> </p><p>appel</p></b>
+    <script>
+    document.getElementById("demo").innerHTML = 5 + 6;
+    var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("math").innerHTML = text;
+
+   </script>
+  <form>
+        Username:
+        <input type="text" size="12" id="un" /><br />
+        <input type="submit" onclick="input();" />
+      </form>
+
+<script>
+    
+function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);
+
+
+   for ( var i =0; i < input.length; i++){
+   
+  if ( input.indexOf(input.charAt(i)) == input.lastIndexOf(input.charAt(i))){
+console.log(input.charAt(i));
+break;
+}
+   }
+}
+</script>
+</body>
+
+</html>
